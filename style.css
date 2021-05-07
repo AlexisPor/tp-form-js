@@ -1,0 +1,78 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#titre{
+    margin-left: 50px;
+    margin-top: auto;
+    padding-bottom: 20px;
+    color: rgb(55, 79, 156);
+    
+}
+#form {
+    margin: 0 auto;
+    width: 550px;
+    padding: 1em;
+    border: 3px solid black;
+    border-radius: 26px;
+  }
+  form div + div {
+    margin-top: 1em;
+    color: rgb(55, 79, 156);
+  }
+  label {
+    display: inline-block;
+    width: 155px;
+    text-align: left;
+  }
+  input{
+    border-radius: 10px;
+  }
+  #butt{
+    padding: 1px;
+    line-height: 0px;
+}
+.labelSecond{
+    width: auto;
+}
+#mod{
+    width: 200px;
+}
+
+.error{
+  color: red;
+}
+
+/***********BOUTONS***************/
+.btn {
+  border: 1px solid cadetblue;
+  border-radius: 26px;
+  color: cadetblue;
+  text-decoration: none;
+  background-color: white;
+  font-size: 20px;
+}
+.btn:hover{
+  background-color: cadetblue;
+  color: white;
+}
+.btn:active{
+  background-color: white;
+  color: cadetblue;
+}
+.btn-reset {
+  border: 1px solid rgb(151, 65, 65);
+  border-radius: 26px;
+  color: rgb(151, 65, 65);
+  text-decoration: none;
+  background-color: white;
+  font-size: 20px;
+}
+.btn-reset:hover{
+  background-color: rgb(151, 65, 65);
+  color: white;
+}
+.btn-reset:active{
+  background-color: white;
+  color: rgb(151, 65, 65);
+}
+/*************FIN BOUTONS**********************/

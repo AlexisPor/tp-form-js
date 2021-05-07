@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title class="title">Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form id="form">
+        <div id="titre">
+            <h1>Formulaire d'inscription</h1>
+        </div>
+        <div>
+            <label for="name">Prénom et Nom *:</label>
+            <input type="text" id="name" name="name" required>
+            <p id="nameError" class="error"></p>
+        </div>
+        <div>
+            <label for="cin">CIN *:</label>
+            <input type="text" id="cin" name="cin" maxlength="10" required>
+            <p id="cinError" class="error"></p>
+        </div>
+        <div>
+            <label for="mail">Adresse mail *:</label>
+            <input type="email" id="mail" name="mail" placeholder="ZZZ@gmail.com" required>
+            <p id="mailError" class="error"></p>
+        </div>
+        <div>
+            <label for="niveauS">Niveau scolaire *:</label>
+
+            <label for="secondaire" class="labelSecond">Secondaire</label>
+            <input type="radio" name="niveau" id="secondaire" value="Secondaire" checked>
+
+            <label for="universitaire" class="labelSecond">Universitaire</label>
+            <input type="radio" name="niveau" id="universitaire" value="Universitaire">
+            
+            <label for="autre" class="labelSecond">Autre</label>
+            <input type="radio" name="niveau" id="autre" value="autre">
+        </div>
+        <div>
+            <label for="module" id="mod">Module de formation *:</label>
+            <select multiple id="module">
+                <option class="listeModule" value="html">HTML5</option>
+                <option class="listeModule" value="css">CSS3</option>
+                <option class="listeModule" value="javascript">JavaScript</option>
+                <option class="listeModule" value="jquery">JQuery</option>
+            </select>
+        </div>
+        <div id="butt">
+            <p>(*)Champs obligatoires</p>
+       <input type="button" class="btn" value="Valider" onclick="main()" >
+       <input type="button" class="btn-reset" value="Annuler">
+        </div>
+    </form>
+</body>
+</html>
